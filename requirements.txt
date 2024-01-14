@@ -1,0 +1,8 @@
+scikit-learn
+python-crfsuite
+numpy
+pandas
+tqdm
+
+
+
