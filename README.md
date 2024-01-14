@@ -63,7 +63,7 @@ to pay (PTP) business process. Contains the following files :
 * [conditional_random_fields.py](src%2Factionclassification%2Fconditional_random_fields.py) - a modules to hold all CRF
   related functions.
 * [features_strategies.py](src%2Factionclassification%2Ffeatures_strategies.py) - a module to hold feature strategy
-* classes, classes to help extract features from sequences.
+  classes, classes to help extract features from sequences.
 * [train_activity_action.py](src%2Factionclassification%2Ftrain_activity_action.py) - a module to hold the activity
   action functions
 * [train_sequence_model.py](src%2Factionclassification%2Ftrain_sequence_model.py) - a module to hold basic functions
