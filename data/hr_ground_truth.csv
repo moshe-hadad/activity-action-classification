@@ -1,0 +1,38 @@
+activity_name,start,end,actual_end,overlapping_activities,bp_id,overlapping_bps,classification,Multi Class Classification,Single Class Classification,probability
+GenerateJobApplicationActivity,17,356,325,[],1224,[],GenerateJobApplicationActivity,TRUE,TRUE,0.994191527
+ResumeReviewActivity,356,1212,1192,[],1224,[],ResumeReviewActivity,TRUE,TRUE,0.993149029
+GenerateJobApplicationActivity,1212,1582,1520,[],1225,[],GenerateJobApplicationActivity,TRUE,TRUE,0.994191527
+ResumeReviewActivity,1582,2354,2336,[],1225,[],ResumeReviewActivity,TRUE,TRUE,0.99332916
+GenerateJobApplicationActivity,2354,2708,2664,[],1226,[],GenerateJobApplicationActivity,TRUE,TRUE,0.994191527
+ResumeReviewActivity,2708,4467,4461,['ScheduleAnInterviewActivityCall'],1226,[1255],"ResumeReviewActivity, ScheduleAnInterviewActivityCall",TRUE,TRUE,0.211112471
+ScheduleAnInterviewActivityCall,3057,4881,4871,"['ResumeReviewActivity', 'GenerateJobApplicationActivity']",1225,"[1226,1227]","ResumeReviewActivity, ScheduleAnInterviewActivityCall, GenerateJobApplicationActivity",TRUE,TRUE,0.021791643
+GenerateJobApplicationActivity,4467,4939,4881,['ScheduleAnInterviewActivityCall'],1227,[1226],GenerateJobApplicationActivity,FALSE,TRUE,0.986619178
+ResumeReviewActivity,4939,6205,6164,['PerformAnInterviewCall'],1227,[1225],ResumeReviewActivity,FALSE,TRUE,0.839889913
+PerformAnInterviewCall,5606,6879,6859,['ResumeReviewActivity'],1225,[1227],PerformAnInterviewCall,FALSE,TRUE,0.962105769
+GenerateJobApplicationActivity,6879,7261,7190,[],1228,[],GenerateJobApplicationActivity,TRUE,TRUE,0.994191527
+ResumeReviewActivity,7261,8060,8044,[],1228,[],ResumeReviewActivity,TRUE,TRUE,0.99332916
+GenerateJobApplicationActivity,8060,8421,8374,[],1229,[],GenerateJobApplicationActivity,TRUE,TRUE,0.994191527
+ResumeReviewActivity,8421,9412,9329,['ScheduleAnInterviewActivityCall'],1229,[1228],ResumeReviewActivity,FALSE,TRUE,0.992940521
+ScheduleAnInterviewActivityCall,9105,10272,10237,['ResumeReviewActivity'],1228,[1229],ScheduleAnInterviewActivityCall,FALSE,TRUE,0.960602883
+GenerateJobApplicationActivity,10272,10843,10786,['PerformAnInterviewCall'],1230,[1228],GenerateJobApplicationActivity,TRUE,TRUE,0.991559535
+PerformAnInterviewCall,10384,11099,11067,['GenerateJobApplicationActivity'],1228,[1230],GenerateJobApplicationActivity,FALSE,FALSE,0.45265992
+ResumeReviewActivity,11099,11974,11941,[],1230,[],ResumeReviewActivity,TRUE,TRUE,0.993149029
+ScheduleAnInterviewActivityCall,11974,14067,14049,"['ScheduleAnInterviewMeeting','GenerateJobApplicationActivity']",1229,"[1228,1231]",ScheduleAnInterviewActivityCall,FALSE,TRUE,0.873541687
+ScheduleAnInterviewMeeting,12074,14576,14533,"['ScheduleAnInterviewActivityCall','GenerateJobApplicationActivity']",1228,"[1229,1231]",ScheduleAnInterviewMeeting,FALSE,TRUE,0.47598677
+GenerateJobApplicationActivity,13457,14333,14328,"['ScheduleAnInterviewActivityCall','ScheduleAnInterviewMeeting']",1231,"[1229,1228]",GenerateJobApplicationActivity,FALSE,TRUE,0.835692905
+ResumeReviewActivity,14576,15377,15350,[],1231,[],ResumeReviewActivity,TRUE,TRUE,0.99332916
+PerformAnInterviewMeeting,15377,17273,17235,"['GenerateJobApplicationActivity','PerformAnInterviewCall']",1228,"[1232,1229]","PerformAnInterviewMeeting , GenerateJobApplicationActivity, PerformAnInterviewMeeting",FALSE,TRUE,0.007557026
+GenerateJobApplicationActivity,15720,16644,16615,"['PerformAnInterviewMeeting','PerformAnInterviewCall']",1232,"[1228,1229]",GenerateJobApplicationActivity,FALSE,TRUE,0.711297713
+PerformAnInterviewCall,16049,17078,17037,"['PerformAnInterviewMeeting', 'GenerateJobApplicationActivity']",1229,"[1228,1232]",GenerateJobApplicationActivity,FALSE,FALSE,0.119633978
+ScheduleAnInterviewActivityCall,17273,18903,18876,['ScheduleAnInterviewMeeting'],1231,[1229],ScheduleAnInterviewActivityCall,FALSE,TRUE,0.679156949
+ScheduleAnInterviewMeeting,17801,19585,19551,['ScheduleAnInterviewActivityCall'],1229,[1231],ScheduleAnInterviewMeeting,Unknown,TRUE,0.749887127
+ResumeReviewActivity,19585,20696,20665,['GenerateJobApplicationActivity'],1232,[1233],ResumeReviewActivity,FALSE,TRUE,0.194285014
+GenerateJobApplicationActivity,20245,20588,20557,['ResumeReviewActivity'],1233,[1232],GenerateJobApplicationActivity,FALSE,TRUE,0.994191527
+PerformAnInterviewCall,20696,21413,21362,['PerformAnInterviewMeeting'],1231,[1229],PerformAnInterviewMeeting,FALSE,FALSE,0.455014931
+PerformAnInterviewMeeting,20928,21674,21651,['PerformAnInterviewCall'],1229,[1231],PerformAnInterviewMeeting,FALSE,TRUE,0.97212993
+ScheduleAnInterviewActivityCall,21674,22687,22664,[],1232,[],ScheduleAnInterviewActivityCall,TRUE,TRUE,0.97852395
+ScheduleAnInterviewMeeting,22687,26508,26505,"['ResumeReviewActivity','ContractProposal','PerformAnInterviewCall']",1231,"[1233,1229,1232]","ResumeReviewActivity , PerformAnInterviewCall",FALSE,FALSE,0.033680618
+ResumeReviewActivity,22851,25201,25173,"['ScheduleAnInterviewMeeting','ContractProposal']",1233,"[1231,1229]",ResumeReviewActivity,FALSE,TRUE,0.189529605
+ContractProposal,23848,27226,27222,"['ScheduleAnInterviewMeeting','ResumeReviewActivity','PerformAnInterviewCall']",1229,"[1231,1233,1232]",ContractProposal,FALSE,TRUE,0.899964244
+PerformAnInterviewCall,25366,27306,27235,"['ScheduleAnInterviewMeeting','ContractProposal']",1232,"[1231,1229]",PerformAnInterviewCall,FALSE,TRUE,0.685331186
+PerformAnInterviewMeeting,27306,28384,28384,[],1231,[],PerformAnInterviewMeeting,TRUE,TRUE,0.958282216
