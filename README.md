@@ -81,7 +81,7 @@ to pay (PTP) business process. Contains the following files :
 5. set PYTHONPATH to include the project src as working directory
    ```set PYTHONPATH=%PYTHONPATH%;C:[project-path]\src```
 6. CD to src/actionclassification and run
-   ```python -m \main```
+   ```python -m main```
 
 # Execution configuration in the main module
 
