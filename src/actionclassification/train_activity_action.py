@@ -188,7 +188,7 @@ def validate_start_end_correctness(bp_data_set, start_activity_label='Start Acti
 
 def get_features_and_strategy_for_activity_action_model():
     features = ['event_with_roles', 'selective_filter_data', 'origin_selective_filter_data']
-    activity_features_strategy = util.create_features_strategy(features, window_backwards=15, window_forward=15)
+    activity_features_strategy = util.create_features_strategy(features, window_backwards=5, window_forward=15)
     return features, activity_features_strategy
 
 

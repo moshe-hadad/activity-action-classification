@@ -253,7 +253,7 @@ def report_classification(data_set, truth_column, predicted_column, labels=None,
         return report
 
 
-def create_features_strategy(features, window_backwards=5, window_forward=15):
+def create_features_strategy(features, window_backwards=5, window_forward=10):
     activity_window_strategy = WindowFeatureStrategy(window_backwards=window_backwards, window_forward=window_forward)
     activity_features_strategy = {feature: activity_window_strategy for feature in features}
     return activity_features_strategy
