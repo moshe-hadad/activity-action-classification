@@ -11,7 +11,7 @@ segments.<br>
 For simplicity, we can call them network packets.<br>
 
 The objective of this project is to present the method for identifying an activity action in network traffic.<br>
-Activity Action is defined as a Start of an END of a business processes activity. <br>
+Activity Action is defined as a START or an END of a business processes activity. <br>
 The figure bellow depicts a sequence of packets resulted of running 4 activities A, B, C and D.
 The activities were performed in parallel so the packets in the sequence are interleaved.<br>
 
